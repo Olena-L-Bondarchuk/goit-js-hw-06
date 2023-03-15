@@ -15,7 +15,7 @@ const images = [
 
 const galleryListEl = document.querySelector('.gallery');
 
-const addPicture = images.map(({ url, alt }) => { return `<li> <img scr='${url}' alt='${alt}' width='500' height='auto' </li>`; })
+const addPicture = images.map(({ url, alt }) => { return `<li> <img src='${url}' alt='${alt}' width='500' height='auto' </li>`; })
   .join("");
 
   galleryListEl.style.cssText = "display: flex; gap: 15px; list-style: none";
